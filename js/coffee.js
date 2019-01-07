@@ -1,5 +1,5 @@
 // 連結到嚴選飲品
-var jsonUrl = "https://api.myjson.com/bins/1dc7y0";
+var jsonUrl = "https://api.myjson.com/bins/6fykw";
 var jsonData;
 			
 $.getJSON(jsonUrl, function (resuit) {

@@ -1,5 +1,5 @@
 // 連結到嚴選飲品
-var jsonUrl = "https://api.myjson.com/bins/hq3q0";
+var jsonUrl = "https://api.myjson.com/bins/xrr8w";
 var jsonData;
 			
 $.getJSON(jsonUrl, function (resuit) {
@@ -39,7 +39,7 @@ $(function () {
 			jsonData.sort(sortByCapacity);
 			break;
 		case 'calorie':
-			//jsonData.sort(sortByCalorie);
+			jsonData.sort(sortByCalorie);
 			break;
 		default:
 		}

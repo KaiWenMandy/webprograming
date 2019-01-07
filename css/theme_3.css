@@ -1,0 +1,47 @@
+body {
+	background-image: url(coffee.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+div	{
+	width: 150px;
+	height: 250px;
+	float: left;
+	background-color: #cc6600;
+	color: black;
+	padding: 20px;
+	margin: 10px;
+	font-size: 24px;
+	opacity: 0.7;
+}
+div:hover	{
+	opacity: 1;
+}
+.message	{
+	font-size: 16px;
+}
+.theme		{
+	font-size: 25px;
+	text-decoration: underline;
+	text-decoration-color: #993300;
+}
+
+button {
+	padding: 10px 25px;
+	margin-right: 10px;
+	color:#E9ECEB;
+	background: #996633;
+	border-radius:20px;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+}
+button:focus	{
+	outline: none;
+}
+button:hover	{
+	background: #663300;
+}
+nav button:last-child	{
+	margin-right: 0;
+}

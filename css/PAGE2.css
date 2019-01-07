@@ -1,0 +1,95 @@
+*{      box-sizing: border-box;}
+body         {      }
+#title       {      font-family: 微軟正黑體,arial,sans-serif;
+                    font-size: 30px;
+                    color: white;
+                    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                    animation-name: example;
+                    animation-duration: 4s;
+                    margin-left: 30px;
+                    float: left;
+                    width:20%;
+                    height:20%;}
+@keyframes example {from {color: red;}
+                    to {color: yellow;}
+                    }
+#search      {      margin-left: 150px;
+                    font-family:微軟正黑體,arial,sans-serif;
+                    font-weight:bold;
+                    position: relative;
+                    top: 55px;}
+#search_input{      width: 30%;
+                    box-sizing: border-box;
+                    border: 2px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    background-color: white;
+                    background-image: url('search.jpg');
+                    background-position: 2px 3px; 
+                    background-repeat: no-repeat;
+                    padding: 12px 20px 12px 40px;}
+#demo        {      border: 3px palevioletred dotted;
+                    height:580px;
+                    width:100%;
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    background:rgba(255,255,255,0.7);}
+.items       { 
+                    height: 200px;}
+.all_pic:hover {
+                      background-color: rgba(194, 189, 189, 0.5);}
+
+#table       {      float:left;
+                    margin-left: 40px;
+                                    width: 500px;
+                                    height: 250px;
+                    background-color: red;
+                    background-image: linear-gradient(0deg, red, yellow);}
+table, tr, td{      border:2px dashed navy; }
+.item_name   {      width:500px; }
+.item_num    {      width:50px; }
+.item_set    {      width:50px;}
+.item_cost   {      width:50px;}
+
+.all_pic     {
+                    margin: 15px;
+                    float: left;}
+div.desc     {      position: relative;
+                    top:-15px;
+                    padding: 5px;
+                    text-align: center;
+                    height:60px;}
+#pos         {      margin-left: 50px;
+                    float:left;
+                    width: 251px;
+                    height: 251px;
+                    border: 1px solid black;
+                    box-sizing: border-box;}
+#buy_car     {      width:249px;}
+div.transbox{       position: absolute;
+                    top:0px;
+                    right: 0px;
+                    width: 500px;
+                    height: 120px;
+                    margin:30px;
+                    background-color: #ffffff;
+                    border: 1px solid black;
+                    filter:alpha(opacity=60);
+                    opacity:0.6;
+            }
+
+body         {      
+                    background-image: url("background.jpg");
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover; }
+
+#to {               font-family:微軟正黑體,arial,sans-serif;
+                    color: rgb(160, 5, 5);
+                    font-weight: bold;
+                    font-size: 60px;}
+#total_cost {       position: relative;
+                    right: -350px;
+                    top:70px;
+                    float : left;}

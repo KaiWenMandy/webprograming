@@ -1,79 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $(".chapter-nav").hide();
-        $("#list").mouseover(function(){
-          $(".chapter-nav").slideToggle("slow");
-        });
-        
-      });
-    </script>
-    <style type="text/css">
-    #list      { float :right ;
-              position:absolute;
-              top:90px;
-              right:0;
-              position: fixed;}
-
-    .nav-title{left:50px;
-              font-family:微軟正黑體,arial,sans-serif;
-              font-size:1em; 
-              line-height:1.2;
-              float:right;
-              width:200px;
-              position:absolute;}
-      .nav,.nav *{box-sizing:border-box}
-      .nav    {border-top-left-radius:2px;
-              border-bottom-left-radius:2px;
-              font-family:微軟正黑體,arial,sans-serif;
-              font-size:1.5em;
-              font-weight:300;
-              position:fixed;
-              top:140px;
-              right:0;
-              list-style:none;
-              background:rgba(207, 202, 202, 1);
-              padding:0;
-              z-index:20;
-              opacity:.5;}
-      .nav ul{
-              list-style:none;
-              padding:0;
-              margin:0}    
-      .nav .glyphicon{font-size:.8em}
-      .nav li{border-top:1px solid rgba(207, 202, 202, 1);
-              color:#fff;
-              height:55px;
-              padding:9px 5px 8px 17px;
-              position:relative;
-              width:200px}
-    .nav a    {color:black}
-    .nav li:hover{background:gray;}
-    .nav li:hover a{color: white;
-              font-weight:bolder;}
-    .section a{text-decoration: none;}
-    body {
-                background-image: url("https://i2.wp.com/ifat.tw/wp-content/uploads/2017/07/drinking.jpg?resize=1024%2C524&ssl=1");
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover; }
-    </style>
+	<meta charset = "utf-8"/>
+	<title>飲品比比比</title>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src ="js/PAGE1.js"></script>
+	<link rel="stylesheet" type = "text/css" href = "css/PAGE1.css">
   </head>
   <body>
   <img src="images/title.png" id="list">
   <nav class="nav">
-    <div class="chapter-nav">
-      <ul>
-        <li class="section"><a href="shopping.html">模擬購物</a></li>
-        <li class="section"><a href="theme_1.html">經典茶飲</a></li>
-        <li class="section"><a href="theme_2.html">手搖杯</a></li>
-        <li class="section"><a href="theme_3.html">嚴選咖啡</a></li>
-      </ul>
-    </div>
+	<div class="chapter-nav">
+	  <ul>
+		<li class="section"><a href="shopping.html">模擬購物</a></li>
+		<li class="section"><a href="theme_1.html">經典茶飲</a></li>
+		<li class="section"><a href="theme_2.html">手搖杯</a></li>
+		<li class="section"><a href="theme_3.html">嚴選素材</a></li>
+	  </ul>
+	</div>
   </nav>
   </body>
 </html>

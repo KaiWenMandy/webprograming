@@ -1,0 +1,49 @@
+#list      { float :right ;
+          position:absolute;
+          top:90px;
+          right:0;
+          position: fixed;}
+
+.nav-title{left:50px;
+          font-family:微軟正黑體,arial,sans-serif;
+          font-size:1em; 
+          line-height:1.2;
+          float:right;
+          width:200px;
+          position:absolute;}
+  .nav,.nav *{box-sizing:border-box}
+  .nav    {border-top-left-radius:2px;
+          border-bottom-left-radius:2px;
+          font-family:微軟正黑體,arial,sans-serif;
+          font-size:1.5em;
+          font-weight:300;
+          position:fixed;
+          top:140px;
+          right:0;
+          list-style:none;
+          background:rgba(207, 202, 202, 1);
+          padding:0;
+          z-index:20;
+          opacity:.5;}
+  .nav ul{
+          list-style:none;
+          padding:0;
+          margin:0}    
+  .nav .glyphicon{font-size:.8em}
+  .nav li{border-top:1px solid rgba(207, 202, 202, 1);
+          color:#fff;
+          height:55px;
+          padding:9px 5px 8px 17px;
+          position:relative;
+          width:200px}
+.nav a    {color:black}
+.nav li:hover{background:gray;}
+.nav li:hover a{color: white;
+          font-weight:bolder;}
+.section a{text-decoration: none;}
+body {
+            background-image: url("drinking.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; }

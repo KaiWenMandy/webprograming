@@ -16,7 +16,6 @@ $.getJSON(jsonUrl, function (resuit) {
 			"<span class = 'message'>" +
 			resuit[idx].message + "</span>" +
 			"</div>";
-			//console.log(content);
 			$("#main").append(content);
 	}
 });
@@ -35,14 +34,12 @@ $(function () {
 		switch (target) {
 		case 'cost':
 			jsonData.sort(sortByCost);
-			console.log(jsonData);
 			break;
 		case 'capacity':
 			jsonData.sort(sortByCapacity);
-			console.log(jsonData);
 			break;
 		case 'calorie':
-			console.log(jsonData);
+			//jsonData.sort(sortByCalorie);
 			break;
 		default:
 		}
@@ -59,7 +56,6 @@ $(function () {
 				jsonData[idx].message + "</span>" +
 				"</div>";
 				$("#main").append(content);
-				//console.log(content);
 		}
 
 		$("#main").animate({"opacity" : 1}, 300, function(){
@@ -69,9 +65,13 @@ $(function () {
 });
 
 function sortByCost( a, b ) {
-	return a.cost > b.cost;
+	return a.cost > b.cost ? 1 : -1;
 }
-			
+
 function sortByCapacity( a, b ) {
-	return a.capacity > b.capacity;
+	return a.capacity > b.capacity ? 1 : -1;
+}
+
+function sortByCalorie( a, b ) {
+	return a.calorie > b.calorie ? 1 : -1;
 }
